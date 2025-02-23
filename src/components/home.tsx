@@ -43,11 +43,11 @@ const Home = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gray-50 flex flex-col items-center justify-center p-4 relative">
       <div className="max-w-6xl w-full space-y-8">
-        <div className="text-center">
+        <div className="text-center space-y-2">
           <h1 className="text-3xl font-bold text-gray-900">
-            Attendance Tracker
+            Vyoma Attendance Tracker
           </h1>
           <p className="mt-2 text-gray-600">
             Keep track of your attendance records
@@ -68,6 +68,12 @@ const Home = () => {
             markedDates={classSchedule}
           />
         </div>
+      </div>
+      <div className="fixed bottom-4 flex items-center justify-center gap-2">
+        <img src="/vyoma-logo.svg" alt="Vyoma Logo" className="w-5 h-5" />
+        <p className="text-sm text-gray-600">
+          Powered by <span className="font-bold text-gray-800">Vyoma</span> Club
+        </p>
       </div>
     </div>
   );
