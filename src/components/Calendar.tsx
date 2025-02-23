@@ -70,7 +70,7 @@ const Calendar = ({
     : getMonthlyClasses(new Date());
 
   return (
-    <Card className="w-[480px] bg-white">
+    <Card className="w-full max-w-[480px] bg-white">
       <CardHeader>
         <CardTitle>Class Schedule</CardTitle>
       </CardHeader>

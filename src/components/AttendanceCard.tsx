@@ -91,7 +91,7 @@ const AttendanceCard = ({
   };
 
   return (
-    <Card className="w-[480px] bg-white">
+    <Card className="w-full max-w-[480px] bg-white">
       <CardHeader>
         <CardTitle>Attendance Tracker</CardTitle>
       </CardHeader>

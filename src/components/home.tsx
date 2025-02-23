@@ -43,8 +43,8 @@ const Home = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col items-center justify-center p-4 relative">
-      <div className="max-w-6xl w-full space-y-8">
+    <div className="min-h-screen bg-gray-50 flex flex-col items-center justify-center p-4 relative overflow-x-hidden w-full">
+      <div className="w-full max-w-6xl space-y-8 px-4">
         <div className="text-center space-y-2">
           <h1 className="text-3xl font-bold text-gray-900">
             Vyoma Attendance Tracker
@@ -54,7 +54,7 @@ const Home = () => {
           </p>
         </div>
 
-        <div className="flex justify-center gap-8">
+        <div className="flex flex-col md:flex-row justify-center items-center gap-8">
           <AttendanceCard
             totalClasses={totalClasses}
             presents={presents}
