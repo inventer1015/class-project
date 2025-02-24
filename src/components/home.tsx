@@ -43,7 +43,7 @@ const Home = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col items-center p-4 relative w-full overflow-x-auto">
+    <div className="min-h-screen bg-gray-50 flex flex-col items-center p-4 w-full min-w-[800px]">
       <div className="w-full min-w-[320px] max-w-6xl space-y-8 px-4">
         <div className="text-center space-y-2">
           <h1 className="text-3xl font-bold text-gray-900">
