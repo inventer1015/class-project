@@ -72,13 +72,24 @@
   }
   body {
     @apply bg-background text-foreground;
-    touch-action: pan-x pan-y pinch-zoom;
-    -webkit-overflow-scrolling: touch;
+    width: 100%;
+    min-width: 100%;
     overflow-x: auto;
-    min-width: 320px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
   }
   html {
-    overflow-x: hidden;
-    min-width: 320px;
+    width: 100%;
+    min-width: 100%;
+    overflow-x: auto;
+  }
+  #root {
+    width: 100%;
+    min-width: fit-content;
+    overflow-x: auto;
+    height: 100%;
   }
 }
